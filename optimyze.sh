@@ -33,11 +33,7 @@ optimize_image()
 	input_file_size=$(stat -c%s "$1")
 	max_input_size=$(expr $max_input_size + $input_file_size)
 
-
-	
 	convert -strip -interlace Plane  -quality "$QUALITY%" $1 $2
-
-
 
 	output_file_size=$(stat -c%s "$2")
 	max_output_size=$(expr $max_output_size + $output_file_size)
@@ -103,7 +99,6 @@ main()
 		outputpath=$OUTPUT;
 		filename=$(basename $CURRENT_IMAGE);
 		
-
 		filepath=$(dirname "$CURRENT_IMAGE");
 
 		filepath=${filepath#$INPUT}

@@ -1,5 +1,5 @@
 # Oprimyze imgages
-Console script for mass processing images (compress) with imagemagick.
+Console script for batch processing images (compress) with imagemagick.
 
 
 Run `./optimyze.sh [params]`
